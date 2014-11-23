@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<head>
+		<!--Page Title-->
+		<title>IPOS</title>
+        <!--Meta Tags-->
+		<meta charset="utf-8" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<!-- Set Viewport-->
+		<meta name="viewport" content="user-scalable=no,initial-scale=1.0, maximum-scale=1.0 width=device-width" />
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="../library/ui/css/bootstrap.min.css" type="text/css" media="screen" />
+			<link rel='stylesheet' href="../library/ui/css/camera.css" type='text/css' media='all'>
+		<link rel="stylesheet" type="text/css" href="../library/ui/css/jquery.fancybox-1.3.4.css" />
+		<link rel='stylesheet' href="../library/ui/css/slidorion.css" type='text/css' media='all'>
+		<link rel="stylesheet" href="../library/ui/css/style.css" type="text/css" />
+        <link rel="stylesheet" href="../library/ui/css/style_ar.css" type="text/css" />
+		<!--Fav and touch icons-->
+		<link rel="shortcut icon" href="index.html">
+		<link rel="apple-touch-icon" href="http://www.ipos.me/ar/img/favicons/apple-touch-icon.png">
+        
+        <script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-41422945-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		
+		</script>
+		
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ar_AR/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+	<!-- Header -->
+	<div class="header">
+		<div class="container">
+			<div class="logo">
+				<h2><a href="index.html">استطلاع الرأي اليومي للإنتخابات الإيرانية<span style="font-size:22px"></span></a></h2>
+			</div>
+			<div class="nav-menu">
+					<ul>
+						<li><a href="index.html" class="active-item">الصفحة الرئيسية</a></li>
+						<li><a href="polls.html" >استطلاعات الرأي</a>
+						</li>
+						
+						<li><a href="contact.html" >اتصل بنا</a>
+						</li>
+                        <li><a href="about.html" >معلومات عنا</a>
+                        <li><a href="../fa/index.html">فارسی</a>
+                        <li><a href="../en/index.html">English</a>
+                        	
+						</li>
+										
+					</ul>
+			</div>
+			<ul id="nav">
+					<li><a href="index.html" class="active-item">الصفحة الرئيسية</a></li>
+						<li><a href="polls.html" >استطلاعات الرأي</a>
+						</li>
+						
+						<li><a href="contact.html" >اتصل بنا</a>
+						</li>
+                        <li><a href="about.html" >معلومات عنا</a>
+                        <li><a href="../fa/index.html">فارسی</a>
+                        <li><a href="../en/index.html">English</a>
+                        	
+						</li>
+									
+                    </li>	
+			</ul>
+		</div>
+	</div>
+	<!-- /Header -->
+	<!-- Infographic-section -->
+    <div class="slider-section-wrapper">
+		<div class="container">
+			<div style="text-align:center;">
+				<div class="columnLeftSide">
+                	<div class="alert alert-info poll-info">
+						النتائج الواردة في هذه الصفحة هي حصيلة اتصالات يومية يجريها فريق العمل داخل إيران بااستخدام أسلوب البحث العلمي
+		            </div>
+                </div>
+                <div class="wideColumnRightSide">
+                	<h2>
+                        
+                            <a href="post/37.html">سيناريوهان : روحاني وقاليباف لدور ثاني؛ أو فوز روحاني</a>
+                        
+                    </h2>
+                </div>
+                <div class="clearfix"></div>
+			</div>
+            
+            <div class="infography-section">
+    			<div class="info-series-chart" style = "">
+                    <h3>اتجاه التصويت</h3>                            
+                    <div id="resultSeries" class="chart-front-page"></div>
+                    
+                </div>
+                <div class="info-bar-chart">
+                    <h3>نتائج اليوم</h3>
+                    <div id="resultBar" class="chart-front-page"></div>
+                </div>
+    			<div class="clearfix"></div>
+    		</div>       
+        </div>        
+	</div>
+
+	<!-- /Infographic-section -->
+    
+    <!-- Features -->
+	<section>
+		<div class="container">
+        	<div class="alert alert-info">
+              <button data-dismiss="alert" class="close" type="button">×</button>
+				<strong>مساعدة: </strong> اضغط على اسم أي مرشح وسوف تختفي المعلومات الخاصة به من الرسم البياني، بهذه الطريقة يمكنك مقارنة نتائج أي من المرشحين  حسب الحاجة. يمكنك إعادة الضغط على اسم المرشح مرة ثانية إذا أردت إعادة إظهار النتائج الخاصة به على الرسم البياني.
+            </div>
+        
+        	<div class="columnLeftSide">
+            	
+            	<a class="twitter-timeline" href="https://twitter.com/IPOSme" lang="ar" height="350" data-widget-id="341759298898128896">Tweets by @IPOSme</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+                
+            </div>
+           	<div class="wideColumnRightSide">
+            	
+                   
+                        
+                            <div class="contentBoxWrapper">
+                                <h5>توصيف و تحليل</h5>
+                                <h3><a href="post/37.html">سيناريوهان : روحاني وقاليباف لدور ثاني؛ أو فوز روحاني</a></h3>
+                                
+                                <p>فيما يلي النتائج التفصيلية لأحدث استطلاع للرأي للانتخابات الرئاسية الإيرانية، تبين هذه النتائج المتقدم في نتائج الاستطلاع من بين المرشحين، كما تقدم معلومات حول التوزيع العمري للمبحوثين ونسبة الإناث من الذكور. >> <a href="post/37.html" style="font-weight:bold;">المزيد</a></p>
+                            </div>
+                        
+                        
+                        <div class="fb-like-box" style="float:left;" data-href="https://www.facebook.com/IpoSolutions" data-width="294" data-height="300" data-show-faces="true" data-stream="false" data-show-border="false" data-header="true"></div>
+                         
+                    
+                </div>    
+            </div> 
+            
+            <div class="clearfix"></div>
+           
+           
+		</div>
+	</section>
+	<!-- /Features -->
+	
+	
+		
+		<!-- Footer -->
+		<div class="footer">
+			<div class="container">
+				<div class="footer-cp">
+						<div id="cp-text" class="pull-right">جميع الحقوق محفوظة إلى iPOS</div>
+                        <div id="ver-text">Version 1.6 build 09June2013</div>
+				</div>
+				<a id="backtop" href="index.html#"></a>
+				<div class="social">
+					<ul>
+						<li class="facebook"><a href="index.html#"></a></li>
+						<li class="twitter"><a href="index.html#"></a></li>
+						
+						<li class="email"><a href="mailto:info@iposolutions.org"></a></li>
+						<li class="clearfix"></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- /Footer -->
+<!-- Javascript -->
+	<script type="text/javascript" src="../library/ui/js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="../library/ui/js/bootstrap.min.js"></script>
+	<script type='text/javascript' src='../library/ui/js/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='../library/ui/js/jquery.easing.1.3.js'></script> 
+  <!--  <script type='text/javascript' src='/library/ui/js/camera.min.js'></script> -->
+	<script type="text/javascript" src="../library/ui/js/tinynav.min.js"></script>
+	<script type="text/javascript" src="../library/ui/js/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="../library/ui/js/jquery.slidorion.min.js"></script>
+	<script type="text/javascript" src="../library/ui/js/ajax-actions.js"></script>
+	<script type="text/javascript" src="../library/ui/js/custom-home.js"></script>
+    <script type="text/javascript" src="../library/ui/js/highcharts.js"></script>
+        
+        <script>
+			$(function () { 
+				$('#resultSeries').highcharts({
+					chart: {
+						type: 'spline',						
+					},
+					title: {
+						text: ''
+					},
+					credits: {
+						text: 'www.ipos.me',
+						href: '',
+						style: {
+							fontSize: '12px'
+						}
+					},
+					legend: {
+						y: -20,
+						itemStyle: {
+							fontSize: '20px'
+						},
+						rtl: true,
+						borderWidth: 0		
+					},
+					plotOptions: {
+						series: {
+							lineWidth: 4,
+							shadow: true,
+							marker: {
+								enabled: false
+							}
+						}
+					},
+					xAxis: {
+						categories: ['31 مايو',
+									'1 يونيو',
+									'2 يونيو', 
+									'3 يونيو',
+									'4 يونيو', 
+									'5 يونيو', 
+									'6 يونيو', 
+									'7 يونيو', 
+									'8 يونيو', 
+									'9 يونيو', 
+									'10 يونيو', 
+									'11 يونيو', 
+									'12 يونيو', 
+									'13 يونيو'],
+						labels: {
+							style: {
+									direction: 'rtl',
+									color: '#000000',
+									fontWeight: 'bold'
+								}
+						}
+					},
+					tooltip:{
+						formatter: function() {
+							return '<div style="direction:rtl;">' +
+								   this.point.series.name  + ' : ' + this.y +
+								   '%</div>';
+						},
+						useHTML: true
+					},
+					yAxis: {
+						title: {
+							text: ''
+						},
+						labels: {
+							style: {
+								color: '#000000',
+							}
+						},
+						min: 0
+					},
+					series: [{
+						name: 'جليلي',
+						color: '#6E6E6E',
+						data: [ 11.8, 9.9, 9.1, 10.3, 12.3, 10.7, 13.9, 14.2, 14.8, 15.7, 16.5, 13.7, 13.7, 12.6,]
+					}, {
+						name: 'حدادعادل',
+						color: '#8A4B08',
+						data: [ 7.0, 5.2, 5.7, 5.0, 5.2, 5.7, 4.4, 5.9, 4.5, 3.9, 3.5, 1.3, 0.6, 0.0,]
+					},{
+						name: 'رضائي',
+						color: '#0080FF',
+						data: [ 19.4, 15.7, 16.3, 15.3, 15.2, 15.6, 16.8, 15.1, 16.4, 16.9, 16.0, 16.3, 14.3, 13.7,]
+					},{
+						name: 'روحاني',
+						color: '#f6d75c',
+						data: [ 6.5, 5.2, 7.2, 8.7, 7.4, 7.9, 8.1, 8.3, 9.6, 12.4, 14.4, 26.6, 31.7, 38.0,]
+					},{
+						name: 'عارف',
+						color: '#00a759',
+						data: [ 5.9, 9.3, 9.1, 8.7, 9.3, 8.2, 5.8, 7.7, 6.8, 8.1, 8.4, 5.1, 1.6, 0.0,]
+					},{
+						name: 'غرضي',
+						color: '#000000',
+						data: [ 0.5, 3.5, 2.9, 2.9, 1.9, 2.2, 0.7, 1.2, 2.6, 3.1, 2.7, 1.5, 1.4, 1.4,]
+					},{
+						name: 'قاليباف',
+						color: '#d31820',
+						data: [ 32.3, 32.6, 30.6, 33.1, 35.3, 36.9, 39.0, 36.5, 34.1, 29.8, 27.1, 24.8, 24.1, 24.6,]
+					},{
+						name: 'ولايتي',
+						color: '#ff6d04',
+						data: [ 16.7, 18.6, 19.1, 16.1, 13.4, 12.8, 11.5, 11.0, 11.3, 10.1, 11.4, 10.7, 12.7, 9.7,]
+					}]
+				});
+				
+				$('#resultBar').highcharts({
+					chart: {
+						type: 'bar',
+						spacingRight: 10,
+						marginRight: 100,
+						marginLeft: 35
+					},
+					credits: {
+						text: 'www.ipos.me',
+						href: '',
+						style: {
+							fontSize: '12px'
+						}
+					},
+					legend: {
+						enabled: false,
+						rtl: true	
+					},
+					title: {
+					   text: ''
+					},
+					tooltip:{
+						formatter: function() {
+							return '<div style="direction:rtl;">' +
+								   this.x[0]  + ' : ' + this.y +
+								   '%</div>';
+						},
+						useHTML: true
+					},
+					plotOptions:{
+						series: {
+							dataLabels: {
+								enabled: true,	
+								color:'black',
+								style: {
+									fontWeight:'bold',
+									fontSize: '14px'
+								},
+								shadow: true															
+							},
+							pointPadding: 0.25,
+							groupPadding: 0,
+							borderWidth: 0, 
+							shadow: false, 
+							color: '#EB540D',
+							colorByPoint: true,
+							colors: ['#6E6E6E', '#8A4B08', '#0080FF', '#f6d75c', '#00a759', '#000000', '#d31820', '#ff6d04']
+						},
+						
+					},
+					xAxis: {
+						categories: [['جليلي', 'jalili'],
+									['حدادعادل', 'haddad'],
+									['رضائي', 'rezai'],
+									['روحاني', 'rohani'],
+									['عارف', 'aref'],
+									['غرضي', 'gharazi'],
+									['قاليباف', 'ghalibaf'],
+									['ولايتي', 'velayati']],
+						labels: {
+							formatter: function() {
+								
+								return '<img src="http://www.ipos.me/library/images/'+this.value[1]+'.jpg" style="margin:0; height:27px" alt="" />&nbsp;&nbsp;'+ this.value[0];
+							},
+							useHTML: true,
+							style: {
+								color: '#000000',
+								fontSize: '15px',
+								fontWeight: 'bold'
+							},
+							lineWidth: 10
+						},
+						gridLineWidth: 0,
+						lineWidth: 0,
+						minorGridLineWidth: 0,
+						lineColor: 'transparent',
+						minorTickLength: 0,
+						tickLength: 00, 
+						opposite: true,
+					},
+					yAxis: {
+						title: {
+						   text: ''
+						},
+						gridLineWidth: 0,
+						labels: {enabled:false},
+						reversed: true
+					},
+					series: [{
+						data: [
+									
+									12.6, 0.0, 13.7, 38.0, 0.0, 1.4, 24.6, 9.7
+								
+								]								
+					}]
+				});
+			});
+		
+		</script>
+</body>
+</html>

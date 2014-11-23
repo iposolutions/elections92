@@ -1,0 +1,74 @@
+body{
+	background-color: #f0f0f0;
+	position: relative;
+	font-family: Arial, Helvetica, sans-serif;
+	direction:ltr;
+	
+}
+
+p {
+	font-size:13px;	
+}
+
+h3 {
+	font-size:22px;
+	line-height: 140%;	
+}
+
+.nav-menu ul li a {
+	font-size:12px;	
+}
+
+.poll-info {
+	font-size:11px;	
+}
+
+.wideColumnRightSide h2 {
+	font-size:30px;	
+}
+
+.alert-info {
+	font-size:13px;	
+}
+
+.logo {
+	float:left;	
+}
+
+.nav-menu {
+	float:right;
+	margin-right:0;
+		
+}
+
+.nav-menu ul {
+	float:left;	
+}
+
+.nav-menu ul li {
+	float: left;	
+}
+
+.columnLeftSide {
+	float:right;	
+}
+
+.wideColumnRightSide {
+	float:left;	
+}
+
+.infography-section h3 {
+	padding-left: 5px;
+	text-align:left;
+	line-height:40px;	
+}
+
+.contentBoxWrapper {
+	float:left;	
+}
+
+.title-bar h2 {
+	margin-left: 0;
+	margin-right: 60px;	
+}
+
